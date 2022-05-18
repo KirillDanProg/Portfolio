@@ -1,0 +1,146 @@
+$main: #da1a6b;
+$sec: #f525f0;
+$third: #d88352;
+$fourth: rgb(74 199 244);
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  //   font-family: "Audiowide", cursive;
+  //   font-family: "Bungee Shade", cursive;
+  //   font-family: "Megrim", cursive;
+  font-family: "Press Start 2P", cursive;
+  background-color: black;
+  color: #da1a6b;
+
+ header {
+   display: none;
+ }
+  .container {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 16px;
+    .main__info {
+      text-align: center;
+      .main__name {
+        margin-top: 24px;
+        margin-bottom: 24px;
+        text-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px $main, 0 0 4px $main,
+          0 0 5px $main, 0 0 10px $main;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+      @keyframes glow {
+        from {
+          text-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px $main,
+            0 0 4px $main, 0 0 5px $main, 0 0 10px $main;
+        }
+        to {
+          text-shadow: 0 0 1px white, 0 0 2px white, 0 0 5px $main,
+            0 0 8px $main, 0 0 12px $main, 0 0 16px $main, 0 0 20px $main;
+        }
+      }
+    }
+    .main__img {
+      width: 50%;
+      margin: 0 auto;
+      img {
+          display: block;
+        max-width: 100%;
+        border-radius: 5px;
+        box-shadow: 0 0 1px white, 0 0 3px white, 0 0 5px $third, 0 0 7px $third, 0 0 15px $third, 0 0 25px $main;
+      }
+    }
+    .main__text {
+        text-align: left;
+        line-height: 1.5;
+    }
+  }
+
+
+  .works {
+    h2 {
+      margin-bottom: 24px;
+    }
+    .work:nth-child(2) {
+      img {
+        animation: workglow1 0.5s ease-out infinite alternate;
+      };
+    }
+    .work:nth-child(3) {
+      img {
+        animation: workglow4 0.2s ease-out infinite alternate;
+      };
+    }
+    .work:nth-child(4) {
+      img {
+        animation: workglow3 0.5s ease-in-out infinite alternate;
+      };
+    }
+    .work:nth-child(5) {
+      img {
+        animation: workglow2 0.5s linear infinite alternate;
+      };
+    }
+      .work {
+        display: block;
+        margin-bottom: 24px;
+        border-radius: 20px 20px;
+        padding: 20px;
+        box-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px $sec, 0 0 5px $sec 0 0 8px $main;
+          img {
+              max-width: 100%;
+              box-shadow: 0 0 1px white, 0 0 2px white, 0 0 6px $main, 0 0 10px $main, 0 0 15px $main;
+              animation: workglow 0.5s ease-in-out infinite alternate;
+              border-top-left-radius: 50px;
+              border-bottom-right-radius: 50px;
+          }
+         
+          @keyframes workglow1 {
+            from {
+              box-shadow: 0 0 1px white, 0 0 2px white, 0 0 6px $third, 0 0 10px $third;
+            }
+            to {
+              box-shadow: 0 0 1px white, 0 0 2px white, 0 0 6px $third, 0 0 10px $third, 0 0 15px $third, 0 0 22px $third;
+            }
+          }
+          @keyframes workglow2 {
+            from {
+              box-shadow: 0 0 1px white, 0 0 2px white, 0 0 8px $main, 0 0 10px $main;
+            }
+            to {
+              box-shadow: 0 0 1px white, 0 0 2px white, 0 0 8px $main, 0 0 10px $main, 0 0 15px $main, 0 0 22px $third;
+            }
+          }
+          @keyframes workglow3 {
+            from {
+              box-shadow: 0 0 1px white, 0 0 2px white, 0 0 6px $sec, 0 0 10px $sec;
+            }
+            to {
+              box-shadow: 0 0 1px white, 0 0 2px white, 0 0 6px $sec, 0 0 10px $sec, 0 0 15px $sec, 0 0 22px $sec;
+            }
+          }
+          @keyframes workglow4 {
+            from {
+              box-shadow: 0 0 1px white, 0 0 2px white, 0 0 6px $fourth, 0 0 10px $fourth;
+            }
+            to {
+              box-shadow: 0 0 1px white, 0 0 2px white, 0 0 6px $fourth, 0 0 10px $fourth, 0 0 15px $fourth, 0 0 22px $fourth;
+            }
+          }
+
+          .work__name {
+            text-align: left;
+            margin-bottom: 16px;
+          }
+      }
+  }
+}

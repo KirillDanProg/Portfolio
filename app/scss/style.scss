@@ -4,6 +4,7 @@ $third: #d88352;
 $fourth: rgb(74 199 244);
 $fiv: #951047;
 $six: rgb(39, 49, 185);
+$sev: #01c8ff;
 * {
   margin: 0;
   padding: 0;
@@ -39,7 +40,8 @@ body {
       .main__name {
         margin-top: 24px;
         margin-bottom: 24px;
-        font-size: 43px;
+        font-size: 38px;
+        padding: 15px;
         text-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px $main, 0 0 4px $main,
           0 0 5px $main, 0 0 10px $main;
         animation: glow 1s ease-in-out infinite alternate;
@@ -78,9 +80,11 @@ body {
         display: block;
         max-width: 100%;
         border-radius: 5px;
-        box-shadow: 0 0 1px white, 0 0 3px white, 0 0 5px $third, 0 0 7px $third,
-          0 0 15px $third, 0 0 25px $main;
+        // animation: img-glow 1s ease-out infinite alternate;;
+        box-shadow: 0 0 1px white, 0 0 3px white, 0 0 5px $sev, 0 0 7px $sev,
+          0 0 15px $fourth, 0 0 25px $sev;
       }
+      
     }
     .main__text {
       text-align: left;

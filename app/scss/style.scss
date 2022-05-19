@@ -16,12 +16,15 @@ li {
   list-style: none;
 }
 body {
-  //   font-family: "Audiowide", cursive;
-  //   font-family: "Bungee Shade", cursive;
-  //   font-family: "Megrim", cursive;
-  font-family: "Press Start 2P", cursive;
+  font-family: "Audiowide", cursive;
+  // font-family: "Bungee Shade", cursive;
+  // font-family: "Megrim", cursive;
+  // font-family: "Press Start 2P", cursive;
   background-color: black;
   color: #da1a6b;
+
+  .main {
+  }
 
   header {
     display: none;
@@ -41,9 +44,16 @@ body {
         animation: glow 1s ease-in-out infinite alternate;
       }
       @keyframes glow {
-        0%, 13%, 27%, 32%, 40%, 89%, 100% {
-          text-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px $main, 0 0 4px $main,
-          0 0 5px $main, 0 0 10px $main, 0 0 15px $main, 0 0 20px $fiv;
+        0%,
+        13%,
+        27%,
+        32%,
+        40%,
+        89%,
+        100% {
+          text-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px $main,
+            0 0 4px $main, 0 0 5px $main, 0 0 10px $main, 0 0 15px $main,
+            0 0 20px $fiv;
         }
         // from {
         //   text-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px $main,
@@ -53,7 +63,9 @@ body {
         //   text-shadow: 0 0 1px white, 0 0 2px white, 0 0 5px $main,
         //     0 0 8px $main, 0 0 12px $main, 0 0 16px $main, 0 0 20px $main;
         // }
-        32%, 50%, 80%{
+        32%,
+        50%,
+        80% {
           text-shadow: none;
         }
       }
@@ -72,33 +84,36 @@ body {
     .main__text {
       text-align: left;
       line-height: 1.5;
+      font-family: "Press Start 2P", cursive;
     }
   }
 
   .works {
     h2 {
       margin-bottom: 24px;
+      font-family: "Press Start 2P", cursive;
       padding: 3px;
-      box-shadow: 1px 0 1px white, 0px 0 2px white, 0 0 2px $six, 0 0 8px $six,4px 4px 4px $six, 5px 4px 6px $six;
+      box-shadow: 1px 0 1px white, 0px 0 2px white, 0 0 2px $six, 0 0 8px $six,
+        4px 4px 4px $six, 5px 4px 6px $six;
     }
     .work:nth-child(2) {
       img {
-        animation: workglow4 0.4s ease-out infinite alternate;
+        animation: workglow4 0.2s ease-out infinite alternate;
       }
     }
     .work:nth-child(3) {
       img {
-        animation: workglow2 0.5s ease-out infinite alternate;
+        animation: workglow2 0.2s ease-out infinite alternate;
       }
     }
     .work:nth-child(4) {
       img {
-        animation: workglow3 0.5s ease-in-out infinite alternate;
+        animation: workglow3 0.3s ease-in-out infinite alternate;
       }
     }
     .work:nth-child(5) {
       img {
-        animation: workglow2 0.5s linear infinite alternate;
+        animation: workglow2 0.2s linear infinite alternate;
       }
     }
     .work {
@@ -170,9 +185,10 @@ body {
 
 @media screen and (min-width: 800px) {
   body {
-.main {
-  box-shadow: 0 -2px 2px white, 0 -4px 3px white, 0 -6px 5px $fourth, 0 -8px 8px $fourth, 0 -12px 12px $fourth;
-}
+    .main {
+      box-shadow: 0 -2px 2px white, 0 -4px 3px white, 0 -6px 5px $fourth,
+        0 -8px 8px $fourth, 0 -12px 12px $fourth;
+    }
     .container {
       width: 50%;
       margin-top: 32px;

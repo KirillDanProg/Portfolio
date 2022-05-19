@@ -39,7 +39,8 @@ body {
       .main__name {
         margin-top: 24px;
         margin-bottom: 24px;
-        font-size: 43px;
+        font-size: 38px;
+        padding: 15px;
         text-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px $main, 0 0 4px $main,
           0 0 5px $main, 0 0 10px $main;
         animation: glow 1s ease-in-out infinite alternate;

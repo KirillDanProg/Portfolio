@@ -101,6 +101,9 @@ body {
       box-shadow: 1px 0 1px white, 0px 0 2px white, 0 0 2px $six, 0 0 8px $six,
         4px 4px 4px $six, 5px 4px 6px $six;
     }
+    .work:last-child {
+      margin-top: 50px;
+    }
     .work:nth-child(2) {
       img {
         animation: workglow4 0.2s ease-out infinite alternate;
@@ -124,6 +127,7 @@ body {
     .work {
       display: block;
       margin-bottom: 24px;
+      margin-top: 24px;
       border-radius: 20px 20px;
       padding: 20px;
       height: 175px;

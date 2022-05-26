@@ -147,8 +147,9 @@ body {
         box-shadow: 0 0 1px white, 0 0 2px white, 0 0 6px $main, 0 0 10px $main,
           0 0 15px $main;
         animation: workglow1 0.5s ease-in-out infinite alternate;
-        border-top-left-radius: 50px;
-        border-bottom-right-radius: 50px;
+        // border-top-left-radius: 50px;
+        // border-bottom-right-radius: 50px;
+        border-radius: 5px;
       }
 
       @keyframes workglow1 {

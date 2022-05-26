@@ -30,19 +30,19 @@
         border: none;
         border-radius: 10px;
         font-weight: 700;
-        animation: glow 0.3s ease-in-out infinite alternate;
+        animation: glow 0.25s ease-in-out infinite alternate;
         color: white;
-        box-shadow:  0 0 1px white, 0 0 2px white, 0 0 3px rgb(225, 0, 37),
+        box-shadow:   0 0 3px rgb(225, 0, 37),
             0 0 5px rgb(225, 0, 64), 0 0 8px rgb(225, 0, 71);
       }
       @keyframes glow {
         from {
-          box-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px rgb(225, 0, 210),
-            0 0 5px rgb(225, 0, 210), 0 0 8px rgb(225, 0, 210),
-            0 0 12px rgb(225, 0, 210);
+          box-shadow:  0 0 3px blue,
+            0 0 5px blue, 0 0 8px blue,
+            0 0 12px blue, 0 0 15px blue, 0 0 20px blue;
         }
         to {
-          box-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px rgb(225, 0, 37),
+          box-shadow: 0 0 3px rgb(225, 0, 37),
             0 0 5px rgb(225, 0, 64), 0 0 8px rgb(225, 0, 71),
             0 0 12px rgb(225, 0, 71), 0 0 15px rgb(255, 25, 144),
             0 0 20px rgb(220, 13, 13);
